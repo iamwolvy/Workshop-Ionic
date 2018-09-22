@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { WelcomePage } from '../pages/welcome/welcome';
 import { ListPage } from '../pages/list/list';
 
 
@@ -17,7 +18,8 @@ import { HttpClientModule, HttpClient, HttpClientXsrfModule, HTTP_INTERCEPTORS }
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    WelcomePage
   ],
   imports: [
     BrowserModule,
@@ -29,14 +31,15 @@ import { HttpClientModule, HttpClient, HttpClientXsrfModule, HTTP_INTERCEPTORS }
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    WelcomePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Geolocation,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     RestaurantsProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }
