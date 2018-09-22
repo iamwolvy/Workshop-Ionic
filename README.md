@@ -1,1 +1,2 @@
-# Workshop-Ionic
+# ionic-worksop
+Starter code for ionic app
